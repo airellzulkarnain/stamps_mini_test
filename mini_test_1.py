@@ -11,7 +11,7 @@ def mutate_arr(n: int) -> int|str:
         return n
     
 arr = [i for i in map(mutate_arr, arr)]
-for i in range(100, 0, -1):
+for i in range(len(arr), 0, -1):
         is_prime = True
         for num in range(2, i):
             if (i % num) == 0:
