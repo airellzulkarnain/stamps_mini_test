@@ -12,4 +12,17 @@ def mutate_arr(n: int) -> int|str:
     
 arr = [i for i in map(mutate_arr, arr)]
 arr = arr[::-1]
-print(*arr, sep=", ")
+for i in arr:
+    if isinstance(i, int):
+        is_prime = True
+        for num in range(2, i):
+            if (i % num) == 0:
+                is_prime = False
+                break
+        if i == 1:
+            print(i, end=", ")
+        elif not is_prime:
+            print(i, end=", ")
+
+    else:
+        print(i, end=", ")
