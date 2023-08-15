@@ -16,7 +16,9 @@ with urllib.request.urlopen(req) as response:
     res = json.loads(response.read().decode('utf-8'))
 
 forecast5 = dict()
+count = 1
 for r in res['list']:
     forecast5[f'{datetime.fromtimestamp(r["dt"]).strftime(r"%a, %d %b %Y")}'] = f'{r["main"]["temp"]}°C'
 
+del forecast5[datetime.now().strftime(r"%a, %d %b %Y")]
 print(*[f'{k}: {v}' for k, v in forecast5.items()], sep='\n')
