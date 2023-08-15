@@ -1,8 +1,8 @@
 # Mini Test
-**Rule:**
-1. Silahkan gunakan bahasa pemrograman apa saja untuk menyelesaikan program-program ini.
-2. Tolong source code dan hasil minitest-nya dikirimkan kembali ke email ini dalam bentuk link Github atau Google Drive, untuk di review oleh tim HR kami.
-3. Kedua soal ini harus diselesaikan
+- Rule:
+    - Silahkan gunakan bahasa pemrograman apa saja untuk menyelesaikan program-program ini.
+    - Tolong source code dan hasil minitest-nya dikirimkan kembali ke email ini dalam bentuk link Github atau Google Drive, untuk di review oleh tim HR kami.
+    - Kedua soal ini harus diselesaikan
 
 1. Program kecil    
     Tolong buat satu array / list dari 1 sampai 100. Print semua angka ini dalam urutan terbalik, tetapi ada beberapa peraturan : 
