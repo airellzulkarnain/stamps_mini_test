@@ -19,4 +19,5 @@ forecast5 = dict()
 for r in res['list']:
     forecast5[f'{datetime.fromtimestamp(r["dt"]).strftime(r"%a, %d %b %Y")}'] = f'{r["main"]["temp"]}°C'
 
+print("Weather Forecast:")
 print(*[f'{k}: {v}' for k, v in forecast5.items()], sep='\n')
