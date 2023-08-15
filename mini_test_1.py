@@ -11,4 +11,5 @@ def mutate_arr(n: int) -> int|str:
         return n
     
 arr = [i for i in map(mutate_arr, arr)]
+arr = arr[::-1]
 print(*arr, sep=", ")
